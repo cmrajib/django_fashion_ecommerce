@@ -1,0 +1,10 @@
+
+
+<div class="input-group">
+    <form action="{% url 'blog:post_list' %}" method="get">
+        <input  name="q" type="text" value ="{{request.Get.q}}" class="form-control" placeholder="Search Posts" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="lnr lnr-magnifier"></i></button>
+        </span>
+    </form>
+</div><!-- /input-group -->
